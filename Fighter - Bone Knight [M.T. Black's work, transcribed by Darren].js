@@ -33,8 +33,7 @@ AddSubClass("fighter", "bone knight", {
 	fullname : "Fighter: Bone Knight",
 	abilitySave : 5,
     spellcastingFactor : "3",
-	spellcastingTable : [ //optional, only if you want to use a non-standard table for spell slot progression and just for this one (sub)class. You can either use the spellcastingTable attribute, or define a new SpellTable in a separate variable (see "Homebrew Syntax - SpellTable.js"). If you are adding multiple classes that use the same table, please add it as a separate variable, for otherwise the spell slots will be added up per individual class level instead of adding the class levels together to find the total amount of spell slots
-	// if you add this variable, the number in the spellcastingFactor will be only be used when multiclassing. Note that you still need to enter something in the spellcastingFactor to tell the sheet that its dealing with a spellcaster.
+	spellcastingTable : [ 
 		[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 0
 		[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 1
 		[0, 0, 0, 0, 0, 0, 0, 0, 0], //lvl 2
@@ -57,11 +56,11 @@ AddSubClass("fighter", "bone knight", {
 		[4, 3, 3, 1, 0, 0, 0, 0, 0], //lvl19
 		[4, 3, 3, 1, 0, 0, 0, 0, 0] //lvl20
     ],
-    spellcastingKnown : { //Optional; Denotes the amount and type of spells the class has access to
+    spellcastingKnown : { 
 
-		cantrips : [0, 0, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], //Optional; This can either be one number, an array of 20 numbers, or be omitted for a class that doesn't have access to cantrips. The numbers reflect the amount of cantrips known
+		cantrips : [0, 0, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], 
 
-		spells : [0, 0, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11, 11, 11, 12, 13],//Optional; This can either be one number, an array of 20 numbers, or be omitted for a class that doesn't have access to spells. The numbers reflect the amount of spells known. For a class that doesn't know spells, but prepares them from a list, you should put "list" here. For a class that uses a spellbook, you should put "book" here.
+		spells : [0, 0, 3, 4, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11, 11, 11, 12, 13],
 
 		prepared : true, //Optional; This indicates that the class has to prepare spells like a cleric/druid/paladin/wizard
 
