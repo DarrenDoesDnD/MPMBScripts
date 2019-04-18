@@ -37,9 +37,9 @@ AddSubClass("rogue", "trapsmith", {
 			source : ["MUSG:TS", 16],
 			minlevel : 3,
 			description : desc([
-				"Gain advantage on Wisdom (Perception) or Intelligence (Investigation) checks made to",
-				"find traps, and advantage on Dexterity checks using thieves tools to disarm traps.",
-				"You can search for traps while traveling at a fast pace without penalty."
+				"Adv. on WIS (Perception) and INT (Investigation) checks made to find traps, and adv. on",
+				"DEX checks using thieves' tools to disarm them. You can search for traps while travelling",
+				"at a fast pace without penalty."
 			])
 		},
 		"subclassfeature3.1" : {
@@ -47,14 +47,11 @@ AddSubClass("rogue", "trapsmith", {
 			source : ["MUSG:TS", 16],
 			minlevel : 3,
 			description : desc([
-				"Quickly set up simple booby traps, make a DEX check using thieves tools. The DC to",
-				"detect and disable your traps is 8 + prof + DEX. Constructing a trap takes 1 minute.",
-				"If you spend 1 minute dismantling the trap, you recover the materials.",
-				"9th level: hastily construct the trap using only 1 action, but halves the DC to spot,",
-				"and grants advantage to the save against it. Traps available are Alarm Trap, Bolt Trap,",
-				"Drop Trap, and Trip Rope trap. Mirts Undermountain Surival Guide PG 16."
+				"Setup simple booby traps; DEX check using thieves' tools. The DC to detect and disable",
+				"is 8 + prof + DEX. Constructing a trap takes 1 min. If you spend 1 min dismantling the",
+				"trap, you recover the materials.",
+				"Traps available are Alarm Trap, Bolt Trap, Drop Trap, and Trip Rope trap."
 			]),
-			action : ["action", ""]
 		},
 		"subclassfeature9" : {
 			name : "Trap Sense",
@@ -67,14 +64,23 @@ AddSubClass("rogue", "trapsmith", {
 				"To gain this benefit, you cannot be blinded, deafened or incapacitated."
 			])
 		},
+		"subclassfeature9.1" : {
+			name : "Hasty Booby Traps",
+			source : ["MUSG:TS", 16],
+			minlevel : 9,
+			description : desc([
+				"9th level: hastily construct traps using 1 action, but halves the DC to spot, and grants",
+				"adv. to the saves against them."
+			]),
+			action : ["action", ""]
+		},
 		"subclassfeature13" : {
 			name : "Unravel the Arcane",
 			source : ["MUSG:TS", 16],
 			minlevel : 13,
 			description : desc([
-				"Your mastery of traps has extended to the magical. You can cast dispel magic, but you",
-				"may only target magical traps that you can see. Spellcasting ability: Intelligence.",
-				"You may use this ability once per short or long rest."
+				"Your mastery of traps extends to the magical. You can cast dispel magic, but only on",
+				"magical traps that you can see; use INT for the check. Once per short or long rest."
 			]),
 			action : ["action", ""],
 			usages : 1,
@@ -85,9 +91,8 @@ AddSubClass("rogue", "trapsmith", {
 			source : ["MUSG:TS", 16],
 			minlevel : 17,
 			description : desc([
-				"Eliminate a sprung trap before the effect happens. If next to or a target the trap,",
-				"use a reaction to disable it, preventing its effects. DEX check using thieves tools",
-				"equal to the disarm DC or it activates as normal. This doesn't work for magical traps."
+				"If next to or a target the trap, use a reaction to disable it, preventing its effects.",
+				"DEX check using thieves' tools equal to the disarm DC or it activates as normal."
 			]),
 			action : ["reaction", ""]
 		}
