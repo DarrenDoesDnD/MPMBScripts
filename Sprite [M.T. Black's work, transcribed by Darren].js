@@ -47,7 +47,7 @@ RaceList["sprite"] = {
 	weightMetric : " light weight",
 	improvements : "Sprite: +2 Dexterity, +2 Intelligence, -4 Strength;",
 	scores : [-4, 2, 0, 2, 0, 0],
-	trait : "Sprite (+2 Dexterity, +2 Intelligence, -4 Strength)\nPoison Arrows: DC10 CON save or poisoned for 1 minute. If save is 5 or lower, target is unconscious.\nI can case Invisibility once per long rest.\n   At 3rd level, I can cast Detect Thoughts once per long rest as a 2nd-level spell.\nSprite equipment costs 50% more, is 1/5th the weight and weapons inflict 1 die lower damage; 1d4 becomes 1.",
+	trait : "Sprite (+2 Dexterity, +2 Intelligence, -4 Strength)\nPoison Arrows: DC10 CON save or poisoned for 1 minute. If save is 5 or lower, target is unconscious.\nI can cast Invisibility once per long rest.\n   At 3rd level, I can cast Detect Thoughts once per long rest as a 2nd-level spell.\nSprite equipment costs 50% more, is 1/5th the weight, and weapons inflict 1 die lower damage; 1d4 becomes 1.",
 	features : {
 		"Invisibility" : {
 			name : "Invisibility",
