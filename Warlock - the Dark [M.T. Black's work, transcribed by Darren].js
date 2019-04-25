@@ -41,9 +41,9 @@ AddSubClass("warlock", "the dark", {
 			description : desc([
 				"When you reduce a creature to 0 hit points, encase yourself in squirling shadows. Adv. on",
 				"DEX (stealth) checks; ends after a short rest or when expended. When targeted by a",
-                "melee or ranged attack, expend the aura as a reaction to Deal 1d6 + CHR + prof",
-                "damage. If you choose to also damage an ally, you add your warlock level to the damage",
-                "to the enemy."
+                		"melee or ranged attack, expend the aura as a reaction to Deal 1d6 + CHR + prof",
+                		"damage. If you choose to also damage an ally, you add your warlock level to the damage",
+               			"to the enemy."
 			]),
 			usages : 1,
 			recovery : "short rest",
@@ -54,13 +54,13 @@ AddSubClass("warlock", "the dark", {
 			source : ["MUSG:TD", 18],
 			minlevel : 6,
 			description : desc([
-                "Resistant to poison. When casting a spell that deals poison or psychic damage, you can",
-                "add your CHR to the damage against one target. If you choose an ally as a target, one",
-                "enemy also suffers damage of the same type equal to 1d6 + CHR every round; CON save",
-                "ends. Add an additional 1d6 to enemy damage at 11th and again at 17th."
+                		"Resistant to poison. When casting a spell that deals poison or psychic damage, you can",
+               			"add your CHR to the damage against one target. If you choose an ally as a target, one",
+                		"enemy also suffers damage of the same type equal to 1d6 + CHR every round; CON save",
+                		"ends. Add an additional 1d6 to enemy damage at 11th and again at 17th."
 			]),
-            usages : 1,
-            dmgres : ["Poison"],
+            		usages : 1,
+            		dmgres : ["Poison"],
 			recovery : "short rest",
 			action : ["reaction", ""]
 		},
@@ -72,8 +72,8 @@ AddSubClass("warlock", "the dark", {
 				"As a bonus action, you see invisible creatures as well as into the Ethereal Plane; you",
 				"can't see any other creatures while using this ability. Lasts for 1 + CHR rounds.",
 				"You can end this feature using a bonus action."
-            ]),
-            recovery : "short rest",
+           	 ]),
+            		recovery : "short rest",
 			action : ["bonus action", " (start or end)"]
 		},
 		"subclassfeature14" : {
@@ -83,13 +83,13 @@ AddSubClass("warlock", "the dark", {
 			description : desc([
 				"Whisper dark promises to an enemy within 60 ft, making them believe enemies are",
 				"friends and friends are enemies. WIS save, on a failed save target is charmed for 1 min",
-                "or until concentration is broken; target can retry the save after each round. If used on",
-                "an ally, 1st attack is at adv. all other attacks, saves, ability checks are disadv. for",
-                "1 min."
+                		"or until concentration is broken; target can retry the save after each round. If used on",
+                		"an ally, 1st attack is at adv. all other attacks, saves, ability checks are disadv. for",
+                		"1 min."
 			]),
 			usages : 1,
-            recovery : "short rest",
-            action : ["action", ""]
+            		recovery : "short rest",
+            		action : ["action", ""]
 		}
 	}
 });
